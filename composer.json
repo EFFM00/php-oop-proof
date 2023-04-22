@@ -1,0 +1,16 @@
+{
+    "name": "elena/php-oop-proof",
+    "description": "OOP Practice",
+    "autoload": {
+        "psr-4": {
+            "Elena\\PhpOopProof\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "EFFM00",
+            "email": "fischietto.elena@gmail.com"
+        }
+    ],
+    "require": {}
+}
