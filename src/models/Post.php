@@ -1,6 +1,6 @@
 <?php
 
-namespace Elena\PhpOopProof;
+namespace Elena\PhpOopProof\models;
 
 use Elena\PhpOopProof\utils\UUID;
 
@@ -8,11 +8,15 @@ class Post{
 
     private string $id;
     private string $mensaje;
+    private array $likes;
 
     public function __construct(string $mensaje) {
-        $uuid = new UUID;
-        $this->id = $uuid->generate();
+        $this->id = UUID::generate();
         $this->mensaje = $mensaje;
+    }
+
+    protected function saludo():string {
+        return "Hi";
     }
 
     public function getMensaje():string {

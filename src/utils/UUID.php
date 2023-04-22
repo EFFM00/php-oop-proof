@@ -4,7 +4,7 @@ namespace Elena\PhpOopProof\utils;
 
 class UUID{
 
-    function generate() {
+    public static function generate() {
         return uniqid();
     }
 
